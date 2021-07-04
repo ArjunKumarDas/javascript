@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h1>Json</h1>
+<h2>JavaScript Object Natation </h2>
+
+<ul id="users-container">
+
+
+</ul>
+
+
+
+    <script>
+
+
+     fetch('https://jsonplaceholder.typicode.com/users')
+    .then(response => response.json())
+    .then(json => displayeUser(json))
+
+
+        function displayeUser(users){
+            // console.log("users", users);
+            const userNames = users.map(user => user.username);
+            const ul = document.querySelector("#users-container");
+            // console.log(userNames);
+            for (let i = 0; i < userNames.length; i++) {
+                const user = userNames[i];
+                const li = document.createElement("li");
+                li.innerText = user;
+                ul.appendChild(li);
+            }
+
+        }
+
+
+
+
+
+
+    </script>
+</body>
+</html>
