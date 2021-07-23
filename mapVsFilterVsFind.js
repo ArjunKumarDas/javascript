@@ -32,7 +32,10 @@ const result = numbers.map(function(element){
 const result = numbers.map(x => x * x );
 
 // filter :    filter reaturn a array
-// The method returns an array containing a subset of the elements of the array on which it is invoked. The function you pass to it should be predicate: a function that returns true or false. The predicate is invoked just as for forEach() and map(). If the return value is true , or a value that converts to true, then the element passed to the predicate is a member of the subset and is added to the array that will become the return value
+// The method returns an array containing a subset of the elements of the array on which it is invoked. 
+// The function you pass to it should be predicate: a function that returns true or false. The predicate is invoked just as for forEach() and map(). 
+// If the return value is true , or a value that converts to true, then the element passed to the predicate is a member of the subset and is added to the array 
+// that will become the return value
 
 const biggerNumbers = numbers.filter( x => x > 5);
 
