@@ -1,0 +1,1 @@
+// Arrays are a special type of objects. The typeof operator in JavaScript returns "object" for arrays.
